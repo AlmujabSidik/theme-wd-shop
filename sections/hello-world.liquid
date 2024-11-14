@@ -1,0 +1,25 @@
+<div>
+    <h1>{{ section.settings.title }}</h1>
+    <p>{{ section.settings.desc_hello }}</p>
+</div>
+
+{% schema %}
+{
+    "name": "Hello World",
+    "tag": "section",
+    "class": "hello-world",
+    "settings": [
+       {
+         "type": "text",
+        "id": "title",
+        "label": "title"
+       },
+        {
+        "type": "textarea",
+        "id": "desc-hello",
+        "label": "Welcome message",
+        "default": "Welcome to my shop!"
+        }
+        ]
+}
+{% endschema %}
